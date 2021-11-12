@@ -40,9 +40,11 @@ Route::get('/', function () {
 //        }
 //        return view('contact');
 //});
-
+//
 //Route::get('/post/edit/{id?}',function ($id=null){
 //    return "Edit Post $id";
 //})->where('id','[0-9]+')->name('create');
-
-Route::fallback(function ())
+////
+//                        Урок 7
+Route::match(['get','post'],'/home','HomeController@test');
+Route::get('/page/{slug}','PageController@show');

@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-{{--    //Урок 5//--}}
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,12 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="">
-       @csrf
-        <input type="text" name="name">
-        <input type="email" name="email">
-        <button type="submit">SEND</button>
-    </form>
-
+<h1>Contact Page</h1>
 </body>
 </html>

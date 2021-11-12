@@ -10,7 +10,7 @@ class HomeController extends Controller
 
             if(!empty($_POST['name'])){
                 echo 'Hello '.$_POST['name'].',You mail-'.$_POST['email'];
-            }else{echo 'Fuck you';}
+            }else{echo 'Enter information :)';}
             return view('contact');
         }
 

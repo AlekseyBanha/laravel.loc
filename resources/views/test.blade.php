@@ -16,6 +16,13 @@
      <input type="number" name="b">
      <button type="submit">Sym</button>
 
+{{--     <select name='test'>--}}
+{{--         --}}
+{{--         @for($x=1; $x<=22; $x++)--}}
+{{--             <option value='{{$x}} >'>{{$x}} </option>--}}
+{{--         @endfor--}}
+
+{{--     </select>--}}
 
  </form>
 

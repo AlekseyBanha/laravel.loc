@@ -7,6 +7,11 @@ use Illuminate\Routing\Route;
 class HomeController extends Controller
 {
         public function index(){
+//            lesson 9
+//        dump($_ENV['MY_SETTING']);
+//        dump(env('MY_SETTING'));
+//        dump(config('app.timezone'));
+//        dump($_ENV);
 
             if(!empty($_POST['name'])){
                 echo 'Hello '.$_POST['name'].',You mail-'.$_POST['email'];

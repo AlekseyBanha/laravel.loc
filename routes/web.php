@@ -46,7 +46,7 @@ Route::get('/', function () {
 //})->where('id','[0-9]+')->name('create');
 ////
 //                        Урок 7
-Route::match(['get','post'],'/home','HomeController@index');
+Route::match(['get','post'],'/home','HomeController@db');
 Route::get('/page/{slug}','PageController@show');
 
 Route::fallback(function () {
@@ -54,3 +54,5 @@ Route::fallback(function () {
 });
                         //**Lesson 8**//
 Route::resource('/posts','PostController');
+                    //Lesson 12//
+Route::match(['get','post'],'/db','DataBaseController@index');

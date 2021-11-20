@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -56,3 +57,6 @@ Route::fallback(function () {
 Route::resource('/posts','PostController');
                     //Lesson 12//
 Route::match(['get','post'],'/db','DataBaseController@index');
+Route::match(['get','post'],'/db','DataBaseController@index');
+
+Route::resource('product','ProductController');

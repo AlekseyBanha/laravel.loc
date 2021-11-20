@@ -43,7 +43,7 @@ class DataBaseController extends Controller {
 //            ->join('country','city.CountryCode','=','country.Code')
 //            ->orderBy('city.ID')
 //            ->get();
-//
+////
 //        dd($data);
 //
 
@@ -54,13 +54,14 @@ class DataBaseController extends Controller {
 //            lesson 13
 
 
-    $post=new Post();
-    $post->title ='pg1';
-//    $post->text='dad2';
-    $post->save();
+//    $post=new Post();
+//    $post->title ='pg1';
+////    $post->text='dad2';
+//    $post->save();
 
-
-
+//            lesson 16
+    $post=Post::find('10');
+    dd($post->title,$post->rubric->title);
 
     }
 
